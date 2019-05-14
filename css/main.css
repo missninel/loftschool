@@ -111,7 +111,7 @@ footer {
   width: 100%; }
 
 .welcoming {
-  background: url("../../images/1st_page/leaves_burger.jpg") center center no-repeat/cover;
+  background: url("../images/1st_page/leaves_burger.jpg") center center no-repeat/cover;
   height: 100vh;
   width: 100%;
   position: relative; }
@@ -285,7 +285,7 @@ footer {
   height: 0; }
 
 .we {
-  background: url("../../images/2nd_page/bg.jpg") center center no-repeat/cover;
+  background: url("../images/2nd_page/bg.jpg") center center no-repeat/cover;
   width: 100%;
   height: 100vh;
   position: relative;
