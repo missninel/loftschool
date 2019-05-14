@@ -1,0 +1,50 @@
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
+.nav__li {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    font-weight: 500;
+    line-height: 2.31;
+  
+    &:after {
+      content: "";
+      display: block;
+      width: 4px;
+      height: 4px;
+      background: #fff;
+      border-radius: 50%;
+      margin-left: 15px;
+    }
+  
+    &:last-child {
+      margin-right: 0;
+  
+      &:after {
+        display: none;
+      }
+    }
+  }
+  
+.nav__link{
+    text-decoration: none;
+    color: inherit;
+    font-size: 13px;
+}
+
+.nav__li--changed{
+    margin-right: 15px;
+
+    &:after{
+        display: none;
+    }
+}
+
+.nav__button{
+    background-color: $orange;
+}

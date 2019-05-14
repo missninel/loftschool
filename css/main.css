@@ -1,0 +1,389 @@
+@font-face {
+  font-family: 'gagalin';
+  src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'lifehack';
+  src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-b-webfont.woff2") format("woff2"), url("../fonts/ubuntu-b-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-light-webfont.woff2") format("woff2"), url("../fonts/ubuntu-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("../fonts/ubuntu-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("../fonts/ubuntu-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  font-weight: normal; }
+
+h1 {
+  font-family: 'gagalin', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 72px;
+  text-transform: uppercase; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul > li {
+    list-style: none; }
+
+.wrapper {
+  overflow: hidden;
+  min-width: 960px;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #fff; }
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+
+.section {
+  height: 100vh;
+  min-height: 650px; }
+
+footer {
+  position: relative;
+  width: 100%; }
+
+.welcoming {
+  background: url("../../images/1st_page/leaves_burger.jpg") center center no-repeat/cover;
+  height: 100vh;
+  width: 100%;
+  position: relative; }
+
+.welcoming__container {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.welcoming__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: .8;
+  -ms-flex: .8;
+  flex: .8;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.welcoming__desc-text {
+  font-family: 'lifehack';
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 1.31;
+  letter-spacing: -1.6px;
+  text-align: left; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.header__logo {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: 13px; }
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.nav__li {
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-weight: 500;
+  line-height: 2.31; }
+  .nav__li:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 15px; }
+  .nav__li:last-child {
+    margin-right: 0; }
+    .nav__li:last-child:after {
+      display: none; }
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px; }
+
+.nav__li--changed {
+  margin-right: 15px; }
+  .nav__li--changed:after {
+    display: none; }
+
+.nav__button {
+  background-color: #e45028; }
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 4px 16px;
+  border: 1px transparent;
+  border-radius: 5px;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-weight: 500;
+  line-height: 2.31; }
+
+.button__link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+  text-transform: uppercase; }
+
+.sidebar__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.sidebar__li {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.sidebar__link {
+  text-decoration: none;
+  color: inherit;
+  position: relative; }
+  .sidebar__link::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: solid 1px #ffffff;
+    border-radius: 50%; }
+  .sidebar__link:after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    bottom: 24px;
+    left: 2px;
+    margin: 5px; }
+
+.section-title {
+  color: #f9b43b;
+  text-align: left; }
+  .section-title--black {
+    color: #2f3234; }
+  .section-title--center {
+    text-align: center; }
+
+.down-arrow {
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: 30px solid transparent;
+  border-top-color: #ffffff;
+  width: 0;
+  height: 0; }
+
+.we {
+  background: url("../../images/2nd_page/bg.jpg") center center no-repeat/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  color: #2f3234; }
+
+.we__header {
+  margin-bottom: 50px; }
+
+.we__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.we__li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-right: 36px; }
+  .we__li:last-child {
+    margin-right: 0; }
+
+.feature__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 33px; }
+
+.feature__text {
+  text-align: center; }
+
+.feature__title {
+  font-family: 'Lifehack', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+  color: #2f3234;
+  margin-bottom: 25px; }
+
+.feature__desc {
+  font-family: 'Ubuntu', Arial,sans-serif;
+  font-style: 14px;
+  line-height: 1.71;
+  color: rgba(47, 50, 52, 0.8); }
+
+.reviews__ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.reviews__li {
+  height: 50%;
+  width: 25%; }
+
+.feedback {
+  position: relative;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  .feedback:hover .feedback__hover {
+    opacity: 1; }
+
+.feedback__avatar {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%; }
+
+.feedback__title {
+  font-family: 'Gagalin', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 2;
+  padding-bottom: 30px; }
+
+.feedback__text {
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-size: 14px;
+  padding-bottom: 15px; }
+
+.feedback__button {
+  background-color: #2f3234;
+  width: 110px;
+  height: 35px; }
+
+.feedback__hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 45px 10% 10px;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: opacity .2s;
+  -o-transition: opacity .2s;
+  transition: opacity .2s; }
