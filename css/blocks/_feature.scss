@@ -1,7 +1,13 @@
 .feature__image{
     display: flex;
     justify-content: center;
-    margin-bottom: 33px;
+    margin-bottom: rem(33px);
+    min-height: rem(89px);
+    align-items: center;
+}
+
+.feature__image-pic{
+    max-width: 100%;
 }
 
 .feature__text{
@@ -10,16 +16,16 @@
 
 .feature__title{
     font-family: 'Lifehack', Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: 500;
     letter-spacing: -0.6px;
     color: $black;
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
 }
 
 .feature__desc{
     font-family: 'Ubuntu', Arial,sans-serif;
-    font-style: 14px;
+    font-size: rem(14px);
     line-height: 1.71;
     color: rgba(47, 50, 52, 0.8);
 

@@ -1,10 +1,18 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  width: 83%;
+}
 .navigation{
     display: flex;
     align-items: center;
+    @include tablets {
+      display: none;
+    }
 }
 
 .nav__li {
-    margin-right: 15px;
+    margin-right: rem(15px);
     display: flex;
     align-items: center;
     text-transform: uppercase;
@@ -19,7 +27,7 @@
       height: 4px;
       background: #fff;
       border-radius: 50%;
-      margin-left: 15px;
+      margin-left: rem(15px);
     }
   
     &:last-child {
@@ -34,11 +42,11 @@
 .nav__link{
     text-decoration: none;
     color: inherit;
-    font-size: 13px;
+    font-size: rem(13px);
 }
 
 .nav__li--changed{
-    margin-right: 15px;
+    margin-right: rem(15px);
 
     &:after{
         display: none;
@@ -47,4 +55,10 @@
 
 .nav__button{
     background-color: $orange;
+    text-transform: uppercase;
+    @include tablets{
+      position: absolute;
+      right: 15px;
+      top: rem(25px);
+  }
 }

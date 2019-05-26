@@ -6,4 +6,8 @@
 .reviews__li{
     height: 50%;
     width: 25%;
+    @include tablets{
+        width: 50%;
+        height: 25%;
+    }
 }

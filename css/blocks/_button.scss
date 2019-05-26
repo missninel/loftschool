@@ -1,16 +1,17 @@
 .button{
     display: flex;
     justify-content: center;
-    padding: 4px 16px;
+    padding: rem(4px) rem(16px);
     border: 1px transparent;
-    border-radius: 5px;
+    border-radius: rem(5px);
     font-family: 'Ubuntu', Arial, sans-serif;
     font-weight: 500;
     line-height: 2.31;
+   
 } 
 .button__link{
     text-decoration: none;
     color: inherit;
-    font-size: 13px;
+    font-size: rem(13px);
     text-transform: uppercase;
 }
