@@ -1,0 +1,26 @@
+.social{
+    display: flex;
+    justify-content: flex-end;
+        @include phones{
+            justify-content: center;
+        }
+}
+
+.social__icon-link{
+    
+}
+
+.social__svg{
+    width: rem(20px);
+    height:rem(20px) ;
+    fill: #fff;
+    opacity: 0.5;
+    &:hover{
+        opacity: 1;
+        transition: .2s;
+    }
+   
+}
+.social__icon{
+    margin-right: 10px;
+}

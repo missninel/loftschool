@@ -2,6 +2,7 @@
 $yellow:#f9b43b;
 $black: #2f3234;
 $orange:#e45028;
+$red:#e45028;
 
 // breakpoints
 
@@ -29,6 +30,11 @@ $phones:480px;
 @import './blocks/menu-accordeon';
 @import './blocks/reviews';
 @import './blocks/feedback';
+@import './blocks/form';
+@import './blocks/order__form';
+@import './blocks/map';
+@import './blocks/footer';
+@import './blocks/social';
 
 
 

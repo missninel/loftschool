@@ -1,0 +1,37 @@
+.footer{
+    background: url("../images/map/footer_bckg.jpg") center bottom no-repeat/cover;
+    position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.footer__container{
+    display: flex;
+    flex-direction: row;
+    align-items:center; 
+    @include phones{
+        flex-direction: column;                      
+    }
+}
+.footer__content{
+    font-family: 'Ubuntu', Arial,sans-serif;
+    font-size: rem(15px);
+    width: 50%;
+    margin: rem(10px);
+    @include phones {
+		width: 100%;
+        text-align: center;
+        font-size: rem(14px);
+	}
+}
+
+.footer__address{
+    margin-bottom: rem(10px);
+}
+
+.footer__phone{
+    color: $red;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: rem(10px);
+}

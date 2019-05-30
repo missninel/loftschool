@@ -208,9 +208,8 @@
                 </div>
                 <ul class="menu__list menu-accordeon">
                     <li class="menu-accordeon__item ">
-                        <img src="./images/burger_menu/burger_icon1.jpg" class="menu-accordeon-image " alt="">
-                        <a href="#" class="menu-accordeon__popup">
-                            <div class="menu-accordeon__popup-text"> для мясоедов</div>
+                        <a href="#" class="menu-accordeon__popup  menu-accordeon-image" style="background-image:url('./images/burger_menu/burger_icon1.jpg');">
+                            <h2 class="menu-accordeon__popup-text"> для мясоедов</h2>
                         </a>
                         <div class="menu-accordeon__content">
                             <div class="menu-accordeon__content-text">
@@ -219,9 +218,8 @@
                         </div>
                     </li>
                     <li class="menu-accordeon__item ">
-                        <img src="./images/burger_menu/burger_icon2.jpg" class="menu-accordeon-image " alt="">
-                        <a href="#" class="menu-accordeon__popup">
-                            <div class="menu-accordeon__popup-text"> для мясоедов</div>
+                        <a href="#" class="menu-accordeon__popup" style="background-image:url('./images/burger_menu/burger_icon2.jpg');">
+                            <div class="menu-accordeon__popup-text"> вегетерианские</div>
                         </a>
                         <div class="menu-accordeon__content">
                             <div class="menu-accordeon__content-text">
@@ -230,19 +228,8 @@
                         </div>
                     </li>
                     <li class="menu-accordeon__item ">
-                        <img src="./images/burger_menu/burger_icon3.jpg" class="menu-accordeon-image " alt="">
-                        <a href="#" class="menu-accordeon__popup">
-                            <div class="menu-accordeon__popup-text"> для мясоедов</div>
-                        </a>
-                        <div class="menu-accordeon__content">
-                            <div class="menu-accordeon__content-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta commodi vero praesentium perferendis voluptatem aspernatur consequuntur laudantium vel,
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu-accordeon__item">
-                        <a href="#" class="menu-accordeon__popup">
-                            <div class="menu-accordeon__popup-text"> для мясоедов</div>
+                        <a href="#" class="menu-accordeon__popup" style="background-image:url('./images/burger_menu/burger_icon3.jpg');">
+                            <div class="menu-accordeon__popup-text">диетические</div>
                         </a>
                         <div class="menu-accordeon__content">
                             <div class="menu-accordeon__content-text">
@@ -383,6 +370,127 @@
                         </div>
                     </li>
                 </ul>
+            </section>
+            <section class="section form">
+                <div class="container">
+                    <h1 class="section-title section-title--yellow">закажите доставку</h1>
+                <div class="order">
+                    <form action="" class="order__form">
+                        <div class="order__form-column">
+                            <div class="order__form-row order__form-row--split">
+                                <label for="" class="order__form-label">
+                                    <div class="order__form-name">Имя</div>
+                                    <input type="text" class="order__form-input" name="name">
+                                </label>
+                                <label for="" class="order__form-label">
+                                    <div class="order__form-name">Телефон</div>
+                                    <input type="text" class="order__form-input" name="phone">
+                                </label>
+                            </div>
+                            <div class="order__form-row">
+                                <label for="" class="order__form-label">
+                                    <div class="order__form-name">Улица</div>
+                                    <input type="text" class="order__form-input" name="street">
+                                </label>
+                            </div>
+                            <div class="order__form-row order__form-row-four">
+                                <label for="" class="order__form-label">
+                                    <div class="order__form-name">Дом</div>
+                                    <input type="text" class="order__form-input" name="building">
+                                </label>
+                                <label for="" class="order__form-label">
+                                    <div class="order__form-name">Корпус</div>
+                                    <input type="text" class="order__form-input" name="housing">
+                                </label>
+                                <label for="" class="order__form-label">
+                                    <div class="order__form-name">Квартира</div>
+                                    <input type="text" class="order__form-input" name="appartment">
+                                </label>
+                                <label for="" class="order__form-label">
+                                    <div class="order__form-name">Этаж</div>
+                                    <input type="text" class="order__form-input" name="floor">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="order__form-column">
+                            <div class="order__form-row">
+                                <label for="" class="order__form-label">
+                                    <div class="order__form-name">Комментарий</div>
+                                    <textarea name="comment" id="" cols="30" rows="10" class="order__form-input order__form-input-textarea"></textarea>
+                                </label>
+                            </div>
+                           <div class="order__form-buttons">
+                                <div class="order__form-row">
+                                    <label for="" class="radio__button">
+                                        <input name="payment" id="" class="radio__button-box" type="radio">
+                                        <div class="radio__button-fake"></div>
+                                        <div class="radio__button-title">Потребуется сдача</div>
+                                    </label>
+                                    <label for="" class="radio__button">
+                                        <input name="payment" id="" class="radio__button-box" type="radio">
+                                        <div class="radio__button-fake">Оплата по карте</div>
+                                        <div class="radio__button-title"></div>
+                                    </label>
+                                </div>
+                                <div class="order__form-row">
+                                    <label class="radio__button radio__button--checkbox">
+                                        <input class="radio__button-box" name="callback" type="checkbox">
+                                        <div class="radio__button-fake"></div>
+                                        <div class="radio__button-title">Не перезванивать</div>
+                                    </label>
+                                </div>
+                                <div class="order__form-row">
+                                    <input class="order__form-button" name="submit" type="submit" value="Заказать">
+                                    <input class="order__form-button order__form-button--clear" name="reset" type="reset" value="Очистить">
+                                </div>
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </section>
+            <section class="section map">
+                <!-- <div class="map__delivery"></div> -->
+                <footer class="footer">
+                    <div class="container footer__container">
+                        <div class="footer__content footer__content-right">
+                            <div class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+                            <a href="tel:+78123771377" class="footer__phone">+7 (812) 377-13-77</a>
+                        </div>
+                        <div class="footer__content footer__content-left">
+                            <ul class="social">
+                                <li class="social__icon">
+                                    <a href="#" class="social__icon-link">
+                                        <svg class="social__svg">
+                                            <use xlink:href="./images/map/sprite.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__icon">
+                                    <a href="#" class="social__icon-link">
+                                        <svg class="social__svg ">
+                                            <use xlink:href="./images/map/sprite.svg#fb"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__icon">
+                                    <a href="#" class="social__icon-link">
+                                        <svg class="social__svg">
+                                            <use xlink:href="./images/map/sprite.svg#inst"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__icon">
+                                    <a href="#" class="social__svg social__icon-link">
+                                        <svg class="social__svg">
+                                            <use xlink:href="./images/map/sprite.svg#tw"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
             </section>
             <!-- <div class=" sidebar__container">
                 <aside class="sidebar">
