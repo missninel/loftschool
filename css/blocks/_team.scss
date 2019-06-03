@@ -15,6 +15,7 @@
     background-color: rgba(47,50,52, 0.93);;
     @include tablets{
         width: 100%;
+        text-align: center;
     }
 
 }
@@ -23,8 +24,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: rem(114px) 21% rem(134px);
+    @include tablets{
+        align-items: center;
+    }
 }
 
 .team__heading{
@@ -33,6 +37,6 @@
 
 
 .team__item{
-    padding-bottom: rem(35px);
+    // padding-bottom: rem(35px);
     
 }

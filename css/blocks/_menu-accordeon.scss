@@ -3,10 +3,15 @@
     top: 0;
     right: 0;
     bottom: 0;
-    width: 24%;
+    width: 50%;
     height: 100vh;
     display: flex;
     justify-content: flex-end;
+    max-width: rem(830px);
+    @include phones{
+        
+        max-width: rem(500px);
+    }
 
 }
 
@@ -16,18 +21,14 @@
 }
 .menu-accordeon-image{
     height: 100vh;
-     position: relative;
-     background-size: cover;
-     background-position: center center;
-     background-repeat: no-repeat; 
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    min-width: rem(80px);
 
 }
 .menu-accordeon__popup{
-// position: absolute;
-//   transform: rotate(-90deg) translateY(-50%);
-//   transform-origin: 0 0;
-//   left: 50%;
-//   top: 100%;
   height: 100%;
   text-decoration: none;
   color: #fff;
@@ -36,10 +37,12 @@
   margin-top: rem(-20px);
   transform: rotate(180deg);
   writing-mode: vertical-lr;
+  display: flex;
+  align-items: center;
 }
 
 .menu-accordeon__popup-text{
-    
+    padding-top: rem(40px);
 }
 
 .menu-accordeon__content{
@@ -52,6 +55,6 @@
 .menu-accordeon__content-text{
 font-family: 'Ubuntu', Arial,sans-serif;
 font-size: rem(14px);
-text-align: center;
+padding: 8%;
 }
 

@@ -1,8 +1,11 @@
 
 .section-title{
     color: $yellow;
-    text-align: left;
-
+    
+    &--left{
+        text-align: left;
+    }
+    
     &--black{
         color: $black;
     }

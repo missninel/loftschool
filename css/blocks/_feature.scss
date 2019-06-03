@@ -4,14 +4,24 @@
     margin-bottom: rem(33px);
     min-height: rem(89px);
     align-items: center;
+    @include phones{
+        flex-shrink: 0;
+        width: 30%;
+        margin-right: rem(30px);
+        margin-bottom: 0;
+    }
 }
 
 .feature__image-pic{
     max-width: 100%;
+    
 }
 
 .feature__text{
     text-align: center;
+    @include phones{
+        text-align: initial;
+    }
 }
 
 .feature__title{

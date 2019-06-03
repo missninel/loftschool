@@ -17,7 +17,7 @@
 
     @include tablets {
         flex-direction: column;
-        padding: 0 15%;
+        text-align: center;
     }
 
 }
@@ -28,8 +28,10 @@
     }
 }
 
+ 
 .welcoming__content-text{
     width: 50%;
+    text-align: left; 
     @include tablets{
         width: 100%;
         padding-top: 0;
@@ -43,5 +45,4 @@
     font-size: rem(65px);
     line-height: 1.31;
     letter-spacing: -1.6px;
-    text-align: left;
 }

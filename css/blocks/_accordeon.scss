@@ -25,17 +25,18 @@
 	font-size: rem(14px);
 	text-decoration: none;
 	position: relative;
-	display: block;
+	display: flex;
+	align-items: center;
 	margin-bottom: rem(20px);
+	font-family: 'Gagalin', Arial,sans-serif;
+	font-size: rem(14px);
 
 	&:before, &:after {
 		content: "";
 		display: block;
-		position: absolute;
-		left: rem(-18px);
-		top: rem(8px);
 		width: 0;
-        height: 0;
+		height: 0;
+		margin-right: rem(10px);
 	}
 
 	&:before {
@@ -57,15 +58,8 @@
 
 	@include tablets {
 		font-size: rem(25px);
-
-		&:before {
-			margin-top: rem(10px);
-		}
-    }
-    &:hover{
-        .accordeon__info{
-
-        }
+		justify-content: center;
+		
     }
 }
 
@@ -73,8 +67,9 @@
 .accordeon__info{
     display: flex;
     flex-direction:row;
-    text-align: left;
-    display:none;
+	text-align: left;
+	height: 0;
+	overflow: hidden;
     @include tablets{
         flex-direction: column;
         text-align: center;
@@ -82,11 +77,8 @@
     
 }
 
-
-.accordeon__heading-text{
-    font-family: 'Gagalin', Arial,sans-serif;
-    font-size: rem(14px);
-    padding-bottom: rem(17px);
+.accordeon__info--active{
+	height: 100%;
 }
 
 

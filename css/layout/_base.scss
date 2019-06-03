@@ -12,7 +12,7 @@ html{
     }
 
     @include phones{
-        font-style: 13px;
+        font-size: 13px;
     }
 }
 
@@ -34,7 +34,7 @@ h1,h2,h3,h4,p{
 h1{
     font-family: 'gagalin', Arial, sans-serif;
     font-weight: normal;
-    font-size: 72px;
+    font-size: rem(72px);
     text-transform: uppercase;
 }
 p{

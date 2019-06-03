@@ -31,6 +31,9 @@
 .order__form-row{
     display: flex;
     margin-bottom: rem(16px);
+    @include tablets{
+        justify-content: center;
+    }
 }
 
 
@@ -93,29 +96,32 @@
 
   }
 }
-  .radio__button--checkbox{
 
+.radio__button-box:checked + .radio__button-fake:after{
+    width: 10px;
+    height: 10px;
+}
+
+.radio__button--checkbox{
     .radio__button-fake {
       border-radius: rem(0px);
     }
-    .radio__button-box{
-      &+.radio__button-fake {
-        &:after {
-          background: transparent;
-        }
-      }
     }
-    .order__radio-elem:checked {
-      &+.radio__button-fake {
-        &:after {
-          background: url("./images/form/checkbox.png") 50% no-repeat transparent;
+
+
+
+
+.radio__button--checkbox:checked{
+    .radio__button-fake{
+        &:after{
+          content: '';
+          background: url("../images/form/checkbox.png") 50% no-repeat transparent;
           background-size: contain;
           width: rem(11px);
           height: rem(9px);
+          }
         }
-      }
-    }
-  }
+}
 
   .order__form-button{
       background: $red;
