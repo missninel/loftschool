@@ -1,0 +1,31 @@
+.ingridients{
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    right: rem(-270px);
+    opacity: 0;
+    width: rem(270px);
+    background: rgba($color: #ffffff, $alpha: 0.8);
+    border-radius: rem(5px);
+    color: #000;
+    font-family: 'Ubuntu', Arial, sans-serif;
+}
+
+
+.ingridients__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: rem(17px);
+        &:first-child{
+            margin-top: rem(17px);
+        }
+        
+}
+.ingridients__svg{
+    width: rem(40px);
+    height: rem(40px);
+}
+.ingridients__name{
+    font-weight: 500;
+}

@@ -1,8 +1,8 @@
 .hamburger-menu-link{
 
-     display: none;
-
+    display: none;
+    padding-bottom: rem(12px);
     @include tablets{
-        display: flex;
+        display: block;
     }
-}
+    }

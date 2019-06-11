@@ -1,0 +1,26 @@
+.content{
+    position:absolute;
+    top: 0;
+    height: rem(90px);
+    width: rem(90px);
+    background: #f08c33;
+    border-radius: rem(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.content__burger-icon{
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Gagalin', Arial, sans-serif;
+    font-size: rem(14px);
+}
+.content__burger-svg{
+    width: rem(46px);
+    height: rem(44px);
+}

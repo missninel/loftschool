@@ -58,7 +58,7 @@
     text-transform: uppercase;
     @include tablets{
       position: absolute;
-      right: 15px;
+      right: rem(40px);
       top: rem(25px);
   }
 }

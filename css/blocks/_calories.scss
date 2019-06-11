@@ -1,0 +1,24 @@
+.calories{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.5;
+    font-family: 'Gagalin', arial, sans-serif;
+
+}
+.calories__svg{
+    width: rem(60px);
+    height: rem(60px);
+    position: relative;
+
+}
+.calories__number{
+    font-size: rem(20px);
+    position: absolute;
+    top: 30%;
+    left: 26%;
+
+}
+.calories__text{
+    text-align: center;
+}
