@@ -1,6 +1,7 @@
 .content{
     position:absolute;
     top: 0;
+    left: 0;
     height: rem(90px);
     width: rem(90px);
     background: #f08c33;
@@ -9,6 +10,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &:hover{
+        background: #e35028;
+        transition: .4s;
+            .ingridients{
+                opacity: 1;
+                left: rem(90px);
+            }   
+    
+    }
 
 
 

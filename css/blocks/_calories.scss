@@ -4,6 +4,10 @@
     bottom: 0;
     opacity: 0.5;
     font-family: 'Gagalin', arial, sans-serif;
+    @include tablets{
+        top: 0;
+        left: 90%;
+    }
 
 }
 .calories__svg{
@@ -17,6 +21,12 @@
     position: absolute;
     top: 30%;
     left: 26%;
+    @include tablets{
+        top: 4%;
+        left: 22%;
+        
+    }
+
 
 }
 .calories__text{

@@ -25,10 +25,16 @@
 }
 .slider__list{
     display: flex;
+   
 }
 
 .slider__item{
     display: flex;
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
 }
 
 .slider__left{
@@ -36,6 +42,10 @@
     width: 60%;
     justify-content: center;
     text-align: center;
+    @include tablets{
+        width: 80%;
+
+    }
 }
 
 .slider__left-pic{
@@ -48,6 +58,10 @@
     flex-direction: column;
     font-family: 'Ubuntu', Arial,sans-serif;
     justify-content: space-around;
+    @include tablets{
+        text-align: center;
+        width: 80%;
+    }
 }
 
 .slider__right-heading{
@@ -59,6 +73,9 @@
     display: flex;
     // margin-top: rem(36px);
     align-items:baseline;
+    @include tablets{
+        justify-content: center;
+    }
 }
 .slider__right-price{
     display: flex;

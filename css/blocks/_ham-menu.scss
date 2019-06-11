@@ -1,4 +1,5 @@
 .ham-menu{
+    display:flex;
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -50,6 +51,9 @@
         height:rem(6px);
         border-radius: 50%;
         background: #fff;
+        &:last-child{
+            display: none;
+        }
 }
 }
 
@@ -58,8 +62,14 @@
     font-family: "Ubuntu", Arial,sans-serif;
     text-transform: uppercase;
     text-decoration: none;
+    display: block;
+    font-size: rem(25px);
+    margin-top: rem(20px);
+    padding-bottom: rem(20px); 
     
-    &:hover{
+    &:hover
+    {
         text-decoration: underline;
+        transition: .3s;
     }
 }
