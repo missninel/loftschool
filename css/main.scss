@@ -15,11 +15,13 @@ $phones:480px;
 @import './layout/fonts';
 @import './layout/base';
 @import './blocks/button';
-@import'./blocks/welcoming';
-@import'./blocks/burger__picture';
+@import'./blocks/_welcoming';
+@import'./blocks/_burger__picture';
 @import './blocks/header';
 @import './blocks/navigation';
 @import './blocks/hamburger-menu-link';
+
+
 @import'./blocks/ham-menu';
 @import './blocks/sidebar';
 @import './blocks/section';

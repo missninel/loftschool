@@ -1,5 +1,4 @@
 .ham-menu{
-    display:flex;
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -9,15 +8,14 @@
     justify-content: center;
     left: -9999px;
     overflow: hidden;
-        .ham-menu--active{
-            opacity: 1;
-            display: flex;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            top: 0;
-            z-index: 10; 
-            }
+     &.active {
+    opacity: 1;
+    display: flex;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
 }
 
 .ham-menu__logo{
@@ -30,6 +28,11 @@
     position: absolute;
     top: 6%;
     right: 3%;
+
+    &:hover{
+        transform: rotate(360deg);
+        transition: 0.3s;
+    }
 }
 .hame-menu__nav{
     display: block;
@@ -51,9 +54,11 @@
         height:rem(6px);
         border-radius: 50%;
         background: #fff;
-        &:last-child{
-            display: none;
-        }
+
+         &:last-child{
+             display: none;
+         }
+
 }
 }
 

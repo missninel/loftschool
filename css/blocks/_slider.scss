@@ -25,11 +25,15 @@
 }
 .slider__list{
     display: flex;
+    overflow: hidden;
    
 }
 
 .slider__item{
     display: flex;
+    min-width: 100%;
+    align-items: center; 
+    justify-content: space-between;
     @include tablets{
         flex-direction: column;
         align-items: center;

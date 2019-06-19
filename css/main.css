@@ -290,9 +290,6 @@ footer {
       display: block; } }
 
 .ham-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -306,7 +303,7 @@ footer {
   justify-content: center;
   left: -9999px;
   overflow: hidden; }
-  .ham-menu .ham-menu--active {
+  .ham-menu.active {
     opacity: 1;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -314,8 +311,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 0;
-    z-index: 10; }
+    top: 0; }
 
 .ham-menu__logo {
   position: absolute;
@@ -326,6 +322,13 @@ footer {
   position: absolute;
   top: 6%;
   right: 3%; }
+  .ham-menu__close:hover {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
 .hame-menu__nav {
   display: block; }
@@ -348,15 +351,23 @@ footer {
   height: 0.375rem;
   border-radius: 50%;
   background: #fff; }
+  .ham-menu__item:after:last-child {
+    display: none; }
 
 .ham-menu__link {
   color: inherit;
   font-family: "Ubuntu", Arial,sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  display: block; }
+  display: block;
+  font-size: 1.5625rem;
+  margin-top: 1.25rem;
+  padding-bottom: 1.25rem; }
   .ham-menu__link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
 
 .sidebar {
   position: fixed;
@@ -546,12 +557,20 @@ footer {
 .slider__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  overflow: hidden; }
 
 .slider__item {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  min-width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
   @media screen and (max-width: 768px) {
     .slider__item {
       -webkit-box-orient: vertical;
