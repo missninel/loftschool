@@ -532,7 +532,10 @@ footer {
   width: 100%; }
 
 .slider-container {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  max-width: 60rem;
+  overflow: hidden; }
 
 .slider-arrow {
   position: absolute;
@@ -557,8 +560,7 @@ footer {
 .slider__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  overflow: hidden; }
+  display: flex; }
 
 .slider__item {
   display: -webkit-box;
@@ -568,9 +570,7 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  overflow: hidden; }
   @media screen and (max-width: 768px) {
     .slider__item {
       -webkit-box-orient: vertical;
@@ -580,6 +580,11 @@ footer {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  @media screen and (max-width: 480px) {
+    .slider__item {
       -webkit-box-pack: start;
       -ms-flex-pack: start;
       justify-content: flex-start; } }
@@ -604,7 +609,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 36%;
+  width: 40%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -674,7 +679,7 @@ footer {
 
 .content {
   position: absolute;
-  top: 0;
+  top: 9.375rem;
   left: 0;
   height: 5.625rem;
   width: 5.625rem;
@@ -701,6 +706,9 @@ footer {
     .content:hover .ingridients {
       opacity: 1;
       left: 5.625rem; }
+  @media screen and (max-width: 768px) {
+    .content {
+      top: 0; } }
 
 .content__burger-icon {
   text-decoration: none;
@@ -715,13 +723,13 @@ footer {
 .calories {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 9.375rem;
   opacity: 0.5;
   font-family: 'Gagalin', arial, sans-serif; }
   @media screen and (max-width: 768px) {
     .calories {
-      top: 0;
-      left: 90%; } }
+      left: 85%;
+      top: 0; } }
 
 .calories__svg {
   width: 3.75rem;
@@ -825,12 +833,16 @@ footer {
       margin-bottom: 1.875rem; } }
   .accordeon:last-child {
     margin-bottom: 0; }
-  .accordeon.active .accordeon__popup {
-    color: #f9b43b; }
-    .accordeon.active .accordeon__popup:before {
-      -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-      transform: rotate(-180deg); }
+
+.accordeon--active .accordeon__popup {
+  color: #f9b43b; }
+  .accordeon--active .accordeon__popup:before {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg); }
+
+.accordeon--active .accordeon__info {
+  height: 100%; }
 
 .accordeon__popup {
   color: #fff;
@@ -937,7 +949,7 @@ footer {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 50%;
+  width: 80%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -946,9 +958,10 @@ footer {
   -ms-flex-pack: end;
   justify-content: flex-end;
   max-width: 51.875rem; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .menu-accordeon {
-      max-width: 31.25rem; } }
+      max-width: 31.25rem;
+      width: 100%; } }
 
 .menu-accordeon__item {
   display: -webkit-box;
@@ -990,9 +1003,15 @@ footer {
   padding-top: 2.5rem; }
 
 .menu-accordeon__content {
+  width: 0;
   height: 100%;
-  background: rgba(47, 50, 52, 0.93);
-  width: 0; }
+  background: rgba(47, 50, 52, 0.93); }
+
+.menu-accordeon__content--active .menu-accordeon__content {
+  width: 100%; }
+
+.menu-accordeon__content--active .menu-accordeon__popup-text {
+  color: #f9b43b; }
 
 .menu-accordeon__content-text {
   font-family: 'Ubuntu', Arial,sans-serif;
@@ -1062,6 +1081,20 @@ footer {
     .feedback__hover {
       text-align: center;
       padding: 1.5625rem 10% 0.3125rem; } }
+
+.overlay {
+  display: none; }
+
+.overlay__container {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Ubuntu', Arial,sans-serif;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 50%; }
+
+.overlay__title {
+  font-family: 'Gagalin', Arial, sans-serif; }
 
 .form {
   background: url("../images/form/Background.jpg") center center no-repeat/cover;

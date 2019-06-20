@@ -1,12 +1,12 @@
 .calories{
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: rem(150px);
     opacity: 0.5;
     font-family: 'Gagalin', arial, sans-serif;
     @include tablets{
+        left: 85%;
         top: 0;
-        left: 90%;
     }
 
 }

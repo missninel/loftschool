@@ -1,6 +1,6 @@
 .content{
     position:absolute;
-    top: 0;
+    top: rem(150px);
     left: 0;
     height: rem(90px);
     width: rem(90px);
@@ -19,7 +19,9 @@
             }   
     
     }
-
+        @include tablets{
+            top: 0;
+        }
 
 
 }

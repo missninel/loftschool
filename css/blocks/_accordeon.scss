@@ -9,14 +9,20 @@
 		margin-bottom: 0;
 	}
 
-	&.active {
-		.accordeon__popup {
+	
+}
+
+.accordeon--active{
+	.accordeon__popup {
 			color: $yellow;
 
 			&:before {
 				transform: rotate(-180deg);
 			}
 		}
+
+	.accordeon__info{
+		height: 100%;
 	}
 }
 
